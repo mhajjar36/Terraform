@@ -5,7 +5,9 @@ Naming a Resource
 ------------------------
 
 resource "provider_resource_type" "name" {
+  
   key = "value"
+  
   key2 = "anothervalue"
 
 }
