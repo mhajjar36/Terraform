@@ -23,10 +23,16 @@ name = you can name this whatever you want
 
 Example, I want to run an aws EC2 instance
 
-<img width="363" alt="image" src="https://user-images.githubusercontent.com/107702633/185226322-1502249b-19af-4e71-937a-63feafe0169e.png">
+
+<img width="1171" alt="image" src="https://user-images.githubusercontent.com/107702633/185227230-3bd0d07c-2ec8-430f-93fc-be6aac40d82e.png">
 
 
-resource "aws_instance" "web" {
+
+We dont need to copy the tag
+
+copy this into your main.tf file
+
+resource "aws_instance" "my-first-project" {
 
   ami           = data.aws_ami.ubuntu.id
   
