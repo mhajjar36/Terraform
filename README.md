@@ -15,7 +15,9 @@ resource "provider_resource_type" "name" {
 ex1.)
 
 resource "aws_iam_access_key" "default" {
+  
   user = aws_iam_user.default.name
+
 }
 
 
@@ -23,5 +25,7 @@ resource "aws_iam_access_key" "default" {
 ex2.)
 
 resource "aws_iam_user" "default" {
-  name = local.config.general.iam-username
+ 
+ name = local.config.general.iam-username
+
 }
