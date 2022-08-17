@@ -11,6 +11,10 @@ resource_type -> get this from the left hand resources side https://registry.ter
 
 <img width="342" alt="image" src="https://user-images.githubusercontent.com/107702633/185225341-b6c71de0-961e-414e-b216-5a1e6e9b434a.png">
 
+Example, I want to run an aws EC2 instance
+
+<img width="363" alt="image" src="https://user-images.githubusercontent.com/107702633/185226322-1502249b-19af-4e71-937a-63feafe0169e.png">
+
 
 
 resource "provider_resource_type" "name" {
