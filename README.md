@@ -1,7 +1,7 @@
 # Terraform_Learning
 
 
-Naming a Resource
+Naming and Setting Up a Resource
 ------------------------
 
 resource "provider_resource_type" "name" {
@@ -60,6 +60,14 @@ resource "aws_iam_user" "default" {
 }
 
 
+Main.tf
+-------------------------------
+
+provider "aws" {
+
+region = "us-east-1"
+
+}
 
 
 
