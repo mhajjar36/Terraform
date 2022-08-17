@@ -34,9 +34,9 @@ copy this into your main.tf file
 
 resource "aws_instance" "my-first-project" {
 
-  ami           = "ami-0864786f78543579fce1"
+  ami           = "ami-052efd3df9dad4825"
   
-  instance_type = "t3.micro"
+  instance_type = "t2.micro"
   
   }
 
@@ -66,6 +66,9 @@ resource "aws_iam_user" "default" {
 
 Command to Run your project
 ---------------------------
+>>> getawstempcredentials
+
+this gives us access to the aws account that you wish to upload to
 
 >>> terraform init 
 
@@ -76,5 +79,10 @@ this initializes and downloads the provider plug-ins, in this case aws plug-ins 
 this is a dry run to make sure you wont break anything in your code
 
 >>> terraform apply 
+
+
+>>> terraform destroy
+
+destroys what you created as to not waste resources $$$
 
 this runs your code type yes to accept
