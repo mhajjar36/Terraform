@@ -34,7 +34,7 @@ copy this into your main.tf file
 
 resource "aws_instance" "my-first-project" {
 
-  ami           = data.aws_ami.ubuntu.id
+  ami           = "ami-0864786f78543579fce1"
   
   instance_type = "t3.micro"
   
