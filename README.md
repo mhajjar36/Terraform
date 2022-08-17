@@ -28,7 +28,7 @@ Example, I want to run an aws EC2 instance
 
 
 
-We dont need to copy the tag
+We dont need to copy the tags
 
 copy this into your main.tf file
 
