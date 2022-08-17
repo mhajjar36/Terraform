@@ -3,6 +3,16 @@
 
 Naming a Resource
 ------------------------
+
+resource "provider_resource_type" "name" {
+  
+  key = "value"
+  
+  key2 = "anothervalue"
+
+}
+
+
 provider = aws, azure etc
 
 resource_type -> get this from the left hand resources side https://registry.terraform.io/providers/hashicorp/aws/latest/docs
@@ -17,13 +27,7 @@ Example, I want to run an aws EC2 instance
 
 
 
-resource "provider_resource_type" "name" {
-  
-  key = "value"
-  
-  key2 = "anothervalue"
 
-}
 
 ex1.)
 
