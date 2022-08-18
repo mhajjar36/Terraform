@@ -140,18 +140,6 @@ value = provider_resource_type.name.attributes_reference.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ex 1.)
 
 output "instance_ip_addr" {
@@ -239,7 +227,7 @@ region = "us-east-1"
 
 variable "name" {
 
-type = string, number or bool
+type = string, number, bool or any
 
 default = default value if not specified
 
@@ -248,7 +236,9 @@ default = default value if not specified
 
 ex 1.)
 
-variable "instance_name" {
+In variables.tf
+
+variable "mike" {
 
   description = "Value of the Name tag for the EC2 instance"
   
@@ -260,13 +250,10 @@ variable "instance_name" {
 
 To reference this variable in main.tf use
 
-var.instance_name
-
-ex in main.tf 
-
-Name = var.instance_name
+Name = var.mike
 
 
+ex 2.)
 
 Variables.tf
 <img width="329" alt="image" src="https://user-images.githubusercontent.com/107702633/185439003-248ce400-b472-41ed-99e2-dfa4e00328d9.png">
@@ -277,7 +264,7 @@ main.tf
 
 
 
-ex 2.)
+ex 3.)
 
 variable "name" {
 
@@ -287,7 +274,7 @@ variable "name" {
     
 }
 
-ex 3.)
+ex 4.)
 
 variable "access_key_id" {
 
@@ -297,7 +284,7 @@ variable "access_key_id" {
     
 }
 
-ex 4.)
+ex 5.)
 
 variable "access_key_secret" {
 
@@ -307,7 +294,7 @@ variable "access_key_secret" {
     
 }
 
-ex 5.)
+ex 6.)
 
 variable "aws_region" {
 
@@ -319,7 +306,7 @@ variable "aws_region" {
   
 }
  
- ex 6.)
+ ex 7.)
  
 variable "ec2_instance_type" {
 
@@ -331,7 +318,7 @@ variable "ec2_instance_type" {
   
 }
 
-ex 7.)
+ex 8.)
 
 variable "template" {
 
@@ -341,7 +328,7 @@ variable "template" {
   
 }
 
-ex 8.)
+ex 9.)
 
 variable "users" {
 
@@ -351,7 +338,7 @@ variable "users" {
   
 }
 
-ex 9.)
+ex 10.)
 
 variable "ec2_instance_type" {
 
