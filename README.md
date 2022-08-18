@@ -75,13 +75,29 @@ Output.tf
 
 Output values are similar to return values in programming languages 
 
-What do we want to output?
+What do we want to output to the command line?
 
 Syntax
 
 output "identifier" {
 
 value = 
+
+}
+
+<img width="213" alt="image" src="https://user-images.githubusercontent.com/107702633/185457670-fa1f0e50-bca3-4d9c-9a3b-ad7b4855a553.png">
+
+
+<img width="656" alt="image" src="https://user-images.githubusercontent.com/107702633/185457773-e20fde3f-fb13-4c4f-9e33-71e4efa64bc7.png">
+
+
+ex 1.)
+
+variable "ec2_instance_type" {
+
+type = string
+
+default = "t3.micro"
 
 }
 
