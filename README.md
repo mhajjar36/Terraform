@@ -79,7 +79,11 @@ What do we want to output?
 
 Syntax
 
-output followed by an identifier
+output "identifier" {
+
+value = 
+
+}
 
 ex 1.)
 
