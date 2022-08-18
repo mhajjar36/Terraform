@@ -4,14 +4,6 @@
 Naming and Setting Up a Resource
 ------------------------
 
-resource "provider_resource_type" "name" {
-  
-  value = provider_resource_type.name.attribute_reference
-  
-  value2 = "anothervalue"
-
-}
-
 
 provider = aws, azure etc
 
@@ -41,15 +33,36 @@ resource "aws_instance" "my-first-project" {
   }
 
 
-ex1.)
 
-resource "aws_iam_access_key" "default" {
+Syntax
+
+resource "provider_resource_type" "name" {
   
-  user = aws_iam_user.default.name
+  value = "anothervalue"
+  
+  value2 = provider_resource_type.name.attribute_reference
+  
+  value3 = 100215
 
 }
 
 
+ex.)
+
+
+resource "aws_iam_user" "tf_learning" {
+
+  name = "kafka-tiered-storage"
+  
+}
+
+
+
+resource "aws_iam_access_key" "default" {
+
+  user = aws_iam_user.tf_learning.name
+  
+}
 
 
 
