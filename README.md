@@ -151,6 +151,14 @@ variable "instance_name" {
   
 }
 
+To reference this variable in main.tf use
+
+var.instance_name
+
+ex in main.tf 
+
+Name = var.instance_name
+
 ex 2.)
 
 variable "name" {
