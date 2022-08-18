@@ -127,6 +127,13 @@ output "instance_id" {
   
 }
  
+ ex 6.)
+ 
+ output "bucket-name" {
+ 
+  value = aws_s3_bucket.bucket.id
+  
+}
 
 
 
