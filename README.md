@@ -225,7 +225,7 @@ region = "us-east-1"
 ## Variables.tf
 
 
-variable "name" {
+variable "give_me_a_name" {
 
 type = string, number, bool or any
 
