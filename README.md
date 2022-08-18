@@ -1,7 +1,7 @@
 # Terraform_Learning
 
 
-## Naming and Setting Up a Resource
+## Naming and Setting Up a Resource in main.tf
 
 
 
