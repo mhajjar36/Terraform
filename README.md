@@ -69,10 +69,9 @@ resource "aws_iam_access_key" "default" {
 
   
 
-Main.tf
--------------------------------
+## Main.tf
 
-  This is whereyou define all your resources
+  This is where you define all your resources
   
   
   
@@ -81,8 +80,8 @@ Main.tf
 
 
 
-Output.tf
---------------------------------
+## Output.tf
+
 
 Output values are similar to return values in programming languages 
 
@@ -207,8 +206,8 @@ output "instance_id" {
 }
 
 
-Variables.tf
----------------------
+## Variables.tf
+
 
 variable "name" {
 
@@ -334,8 +333,8 @@ default = "t3.micro"
 
 }
 
-Provider.tf
------------------------------
+## Provider.tf
+
 
 provider "aws" {
 
@@ -360,8 +359,8 @@ region = "us-east-1"
   
   
   
-Versions.tf
---------------------------
+## Versions.tf
+
   
   terraform {
   
@@ -381,8 +380,8 @@ Versions.tf
   
 }
 
-Command to Run your project
----------------------------
+## Command to Run your project
+
 >>> getawstempcredentials
 
 this gives us access to the aws account that you wish to upload to
