@@ -114,9 +114,10 @@ output "give_me_a_name" {
 
 value = aws_instance.web.public_ip           
 
-# .public_ip is gotten from attributes reference on terraform 
+ .public_ip is gotten from vs code when you type . a list of possible attribute references show up
+ 
+ automatically
 
-website
 
 }
 
