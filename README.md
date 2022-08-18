@@ -340,7 +340,7 @@ provider "aws" {
 
   region  = "us-east-1"
 
-  # You can use access keys
+  #You can use access keys
   
   access_key = var.aws_access_key
   
