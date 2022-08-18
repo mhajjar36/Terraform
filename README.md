@@ -6,9 +6,9 @@ Naming and Setting Up a Resource
 
 resource "provider_resource_type" "name" {
   
-  key = "value"
+  value = provider_resource_type.name.attribute_reference
   
-  key2 = "anothervalue"
+  value2 = "anothervalue"
 
 }
 
@@ -51,13 +51,6 @@ resource "aws_iam_access_key" "default" {
 
 
 
-ex2.)
-
-resource "aws_iam_user" "default" {
- 
- name = local.config.general.iam-username
-
-}
 
 
 Main.tf
