@@ -1,8 +1,8 @@
 # Terraform_Learning
 
 
-Naming and Setting Up a Resource
-------------------------
+## Naming and Setting Up a Resource
+
 
 
 provider = aws, azure etc
