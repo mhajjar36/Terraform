@@ -136,6 +136,73 @@ output "instance_id" {
 }
 
 
+Variables.tf
+---------------------
+
+ex 1.)
+
+variable "instance_name" {
+
+  description = "Value of the Name tag for the EC2 instance"
+  
+  type        = string
+  
+  default     = "ExampleAppServerInstance"
+  
+}
+
+ex 2.)
+
+variable "name" {
+
+    type = any
+    
+    default = {}
+    
+}
+
+ex 3.)
+
+variable "access_key_id" {
+
+    type = any
+    
+    default = {}
+    
+}
+
+ex 4.)
+
+variable "access_key_secret" {
+
+    type = any
+    
+    default = {}
+    
+}
+
+ex 5.)
+
+variable "aws_region" {
+
+  description = "AWS region"
+  
+  type        = string
+  
+}
+ 
+ ex 6.)
+ 
+variable "ec2_instance_type" {
+
+  description = "Instance type for EC2 instances"
+  
+  type        = string
+  
+  default     = "t2.small"
+  
+}
+
 
 
 Command to Run your project
