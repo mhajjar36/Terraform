@@ -77,11 +77,44 @@ Output values are similar to return values in programming languages
 
 What do we want to output to the command line?
 
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
+Select the resouce you want on the left hand side
+
+scroll down to Attributes Reference, this is what you put at the end of your output
+
+<img width="674" alt="image" src="https://user-images.githubusercontent.com/107702633/185460531-01f28691-0785-4806-99a3-0e5685f6ca5f.png">
+
+
+in main.tf
+
+resource "aws_instance" "web" {
+
+ami = "ami-0007865644fc68d453"
+
+instance_type = "t2.micro"
+
+}
+
+TO OUPTUT THE VALUE RETURNED BY THIS RESOURCE TO COMMAND LINE
+
+in output.tf
+
+output "instance_ip" {
+
+value = aws_instance.web.public_ip            # .public_ip is gotten from attributes reference
+
+}
+
+
+
 Syntax
 
-output "identifier" {
+output "give_any_name_here" {
 
-value = 
+value = provider_resource_type.name.attributes_reference.   
+
+#provider_resource_type.name is gotten from a resource type defined in main.tf
 
 }
 
@@ -89,6 +122,18 @@ value =
 
 
 <img width="656" alt="image" src="https://user-images.githubusercontent.com/107702633/185457773-e20fde3f-fb13-4c4f-9e33-71e4efa64bc7.png">
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
