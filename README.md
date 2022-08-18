@@ -66,14 +66,19 @@ resource "aws_iam_access_key" "default" {
 
 
 
+
+  
+
 Main.tf
 -------------------------------
 
-provider "aws" {
+  This is whereyou define all your resources
+  
+  
+  
+  
+ 
 
-region = "us-east-1"
-
-}
 
 
 Output.tf
@@ -329,6 +334,52 @@ default = "t3.micro"
 
 }
 
+Provider.tf
+-----------------------------
+
+provider "aws" {
+
+  region  = "us-east-1"
+
+  # You can use access keys
+  
+  access_key = var.aws_access_key
+  
+  secret_key = var.aws_secret_key
+
+}
+  
+  
+ex .)
+  
+  provider "aws" {
+
+region = "us-east-1"
+
+}
+  
+  
+  
+Versions.tf
+--------------------------
+  
+  terraform {
+  
+  required_version = ">= 1.0.0"
+
+  required_providers {
+  
+    aws = {
+    
+      source  = "hashicorp/aws"
+      
+      version = ">= 4.0"
+      
+    }
+    
+  }
+  
+}
 
 Command to Run your project
 ---------------------------
