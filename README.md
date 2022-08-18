@@ -139,6 +139,15 @@ output "instance_id" {
 Variables.tf
 ---------------------
 
+variable "name" {
+
+type = string, number or bool
+
+default = default value if not specified
+
+}
+
+
 ex 1.)
 
 variable "instance_name" {
@@ -197,6 +206,8 @@ variable "aws_region" {
   
   type        = string
   
+  default     = "us-east-1"
+  
 }
  
  ex 6.)
@@ -208,6 +219,26 @@ variable "ec2_instance_type" {
   type        = string
   
   default     = "t2.small"
+  
+}
+
+ex 7.)
+
+variable "template" {
+
+  type = string
+  
+  default = "01000000-0000-4000-8000-000030080200"
+  
+}
+
+ex 8.)
+
+variable "users" {
+
+  type    = list
+  
+  default = ["root", "user1", "user2"]
   
 }
 
