@@ -168,6 +168,17 @@ ex in main.tf
 
 Name = var.instance_name
 
+
+
+Variables.tf
+<img width="329" alt="image" src="https://user-images.githubusercontent.com/107702633/185439003-248ce400-b472-41ed-99e2-dfa4e00328d9.png">
+
+main.tf
+
+<img width="277" alt="image" src="https://user-images.githubusercontent.com/107702633/185439116-1e5287c5-f925-4ad1-b4a9-797213e4e19f.png">
+
+
+
 ex 2.)
 
 variable "name" {
