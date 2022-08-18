@@ -84,32 +84,47 @@ output followed by an identifier
 ex 1.)
 
 output "instance_ip_addr" {
+
   value = aws_instance.server.private_ip
+  
 }
 
 ex 2.)
 
 output access_key_id {
+
     value = aws_iam_access_key.default.id
+    
     sensitive = true
 }
 
 ex 3.)
+
 output access_key_secret {
+
     value = aws_iam_access_key.default.secret
+    
     sensitive = true
 }
 
 ex 4.)
+
 output "vpc_id" {
-  description = "ID of the vpc"
+
+  description = "ID of the vpc"    #adding a description is optional but good practice
+  
   value       = module.aws_web_server_vpc.vpc_id
+  
 }
  
  ex 5.)
+ 
 output "instance_id" {
+
   description = "ID of EC2 instance"
+  
   value       = module.aws_web_server_instance.instance_id
+  
 }
  
 
