@@ -206,6 +206,33 @@ output "instance_id" {
 }
 
 
+
+## Provider.tf
+
+
+provider "aws" {
+
+  region  = "us-east-1"
+
+  #You can use access keys
+  
+  access_key = var.aws_access_key
+  
+  secret_key = var.aws_secret_key
+
+}
+  
+  
+ex .)
+  
+  provider "aws" {
+
+region = "us-east-1"
+
+}
+  
+
+
 ## Variables.tf
 
 
@@ -333,30 +360,7 @@ default = "t3.micro"
 
 }
 
-## Provider.tf
 
-
-provider "aws" {
-
-  region  = "us-east-1"
-
-  #You can use access keys
-  
-  access_key = var.aws_access_key
-  
-  secret_key = var.aws_secret_key
-
-}
-  
-  
-ex .)
-  
-  provider "aws" {
-
-region = "us-east-1"
-
-}
-  
   
   
 ## Versions.tf
