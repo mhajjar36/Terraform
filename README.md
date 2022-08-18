@@ -108,7 +108,9 @@ in output.tf
 
 output "give_me_a_name" {
 
-value = aws_instance.web.public_ip            # .public_ip is gotten from attributes reference on terraform 
+value = aws_instance.web.public_ip           
+
+# .public_ip is gotten from attributes reference on terraform 
 
 website
 
