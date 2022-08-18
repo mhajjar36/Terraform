@@ -91,15 +91,6 @@ value =
 <img width="656" alt="image" src="https://user-images.githubusercontent.com/107702633/185457773-e20fde3f-fb13-4c4f-9e33-71e4efa64bc7.png">
 
 
-ex 1.)
-
-variable "ec2_instance_type" {
-
-type = string
-
-default = "t3.micro"
-
-}
 
 ex 1.)
 
@@ -273,6 +264,15 @@ variable "users" {
   
 }
 
+ex 9.)
+
+variable "ec2_instance_type" {
+
+type = string
+
+default = "t3.micro"
+
+}
 
 
 Command to Run your project
