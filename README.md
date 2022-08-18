@@ -106,9 +106,11 @@ TO OUPTUT THE VALUE RETURNED BY THIS RESOURCE TO COMMAND LINE
 
 in output.tf
 
-output "instance_ip" {
+output "give_me_a_name" {
 
-value = aws_instance.web.public_ip            # .public_ip is gotten from attributes reference
+value = aws_instance.web.public_ip            # .public_ip is gotten from attributes reference on terraform 
+
+website
 
 }
 
