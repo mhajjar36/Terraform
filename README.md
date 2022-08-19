@@ -30,7 +30,6 @@ provider = aws, azure etc
 
 resource_type -> get this from the left hand resources side https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 
-name = you can name this whatever you want
 
 <img width="342" alt="image" src="https://user-images.githubusercontent.com/107702633/185225341-b6c71de0-961e-414e-b216-5a1e6e9b434a.png">
 
