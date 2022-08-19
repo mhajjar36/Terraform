@@ -12,6 +12,8 @@
 
 ## main.tf   <a name="main"></a>
 
+Main.tf is the only file you need, all other files are optional
+
 Syntax for creating a resource
 
 resource "provider_resource_type" "give_me_any_name" {
