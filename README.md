@@ -227,6 +227,9 @@ region = "us-east-1"
 ## Variables.tf <a name="variables.tf"></a>
 
 
+I dont reccomend this file due to confusion that it may cause, just keep everything in the main.tf this is optional
+
+
 variable "give_me_a_name" {
 
 type = string, number, bool or any
@@ -259,7 +262,6 @@ ex 2.)
 
 Variables.tf
 
-I dont reccomend this file due to confusion that it may cause, just keep everything in the main.tf this is optional
 
 <img width="329" alt="image" src="https://user-images.githubusercontent.com/107702633/185439003-248ce400-b472-41ed-99e2-dfa4e00328d9.png">
 
