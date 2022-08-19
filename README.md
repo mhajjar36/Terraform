@@ -20,7 +20,7 @@ resource "provider_resource_type" "give_me_any_name" {
 
   value2 = provider_resource_type.name.attribute_reference                
   
-  # ↑ ↑ ↑ output of another resource
+  ↑ ↑ ↑ output of another resource
 
   value3 = 100215
 
