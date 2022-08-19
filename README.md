@@ -1,6 +1,6 @@
 # Table of Contents
 
-1. [Naming Resources](#naming)
+1. [Naming Resources] (#naming)
 
 2. [Main.tf](#main.tf)
 
