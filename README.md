@@ -93,7 +93,7 @@ https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 
 Select the resouce you want on the left hand side
 
-scroll down to Attributes Reference, this is what you put at the end of your output
+scroll down to Attributes Reference, this is what you put at the end of your output (If you have visual studio code you dont need to worry about this step, simply typing . will give you a drop down list of attribute references in code so you wont need to refer to this site)
 
 <img width="674" alt="image" src="https://user-images.githubusercontent.com/107702633/185460531-01f28691-0785-4806-99a3-0e5685f6ca5f.png">
 
