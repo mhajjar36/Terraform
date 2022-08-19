@@ -12,7 +12,7 @@
 
 ## main.tf   <a name="main"></a>
 
-Syntax
+Syntax for creating a resource
 
 resource "provider_resource_type" "give_me_any_name" {
 
