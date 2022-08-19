@@ -1,6 +1,8 @@
 # Table of Contents
 
-1. [Naming Resources] (#naming)
+1. [Naming Resources](#naming)
+
+2. [Main.tf](#main.tf)
 
 
 ## Naming and Setting Up a Resource in main.tf   <a name="naming"></a>
@@ -71,7 +73,7 @@ resource "aws_iam_access_key" "default" {
 
   
 
-## Main.tf
+## Main.tf <a name="main.tf"></a>
 
   This is where you define all your resources
   
