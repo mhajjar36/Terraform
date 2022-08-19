@@ -1,8 +1,7 @@
 # Table of Contents
 
-1. [Naming Resources](#naming)
+1. [main.tf](#main)
 
-2. [Main.tf](#main.tf)
 3. [output.tf](#output.tf)
 
 2. [provider.tf](#provider.tf)
@@ -11,7 +10,7 @@
 2. [versions.tf](#versions.tf)
 
 
-## Naming and Setting Up a Resource in main.tf   <a name="naming"></a>
+## main.tf   <a name="main"></a>
 
 Syntax
 
@@ -55,32 +54,24 @@ resource "aws_instance" "my-first-project" {
 
 
 
-ex.)
+ex 1.) Create a resource thats provider is aws, resource type is an iam user, name the resource tf-learning, create a variable called label and give it a value of your_name-tiered-storage
 
 
 resource "aws_iam_user" "tf_learning" {
 
-  name = "mike-tiered-storage"
+  label = "mike-tiered-storage"
 
 }
 
 
+ex 2.) Create a new resource whos provider is aws, resource type is an iam access key, name the resource default, create a variable user and give it the value of what outputs from example 1.
 
 resource "aws_iam_access_key" "default" {
 
-  user = aws_iam_user.tf_learning.name
+  user = aws_iam_user.tf_learning.label
 
 }
 
-
-The value of user is gotten from the resource created before it
-
-
-
-
-## Main.tf <a name="main.tf"></a>
-
-  This is where you define all your resources
 
 
 
