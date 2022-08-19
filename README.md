@@ -13,6 +13,17 @@
 
 ## Naming and Setting Up a Resource in main.tf   <a name="naming"></a>
 
+Syntax
+
+resource "provider_resource_type" "name" {
+  
+  value = "anothervalue"
+  
+  value2 = provider_resource_type.name.attribute_reference
+  
+  value3 = 100215
+
+}
 
 
 provider = aws, azure etc
@@ -43,18 +54,6 @@ resource "aws_instance" "my-first-project" {
   }
 
 
-
-Syntax
-
-resource "provider_resource_type" "name" {
-  
-  value = "anothervalue"
-  
-  value2 = provider_resource_type.name.attribute_reference
-  
-  value3 = 100215
-
-}
 
 
 ex.)
