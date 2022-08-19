@@ -1,9 +1,5 @@
 resource "aws_iam_user" "kafka" {
-  name = var.IAM_User_Name
-
-  tags = {
-    tag-key = "Kafka_Storage"
-  }
+  name = "kafka_tiered_storage"
 }
 
 resource "aws_iam_access_key" "kafka" {
