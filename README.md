@@ -1,7 +1,9 @@
-# Terraform_Learning
+# Table of Contents
+
+1. [Naming Resources] (#naming)
 
 
-## Naming and Setting Up a Resource in main.tf
+## Naming and Setting Up a Resource in main.tf   <a name="naming"></a>
 
 
 
