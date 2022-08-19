@@ -42,7 +42,7 @@ Example, I want to run an aws EC2 instance
 
 We dont need to copy the tags
 
-copy this into your main.tf file
+copy this into your main.tf file and give it your desired values
 
 resource "aws_instance" "my-first-project" {
 
@@ -60,7 +60,7 @@ ex.)
 
 resource "aws_iam_user" "tf_learning" {
 
-  name = "kafka-tiered-storage"
+  name = "mike-tiered-storage"
 
 }
 
@@ -73,6 +73,7 @@ resource "aws_iam_access_key" "default" {
 }
 
 
+The value of user is gotten from the resource created before it
 
 
 
