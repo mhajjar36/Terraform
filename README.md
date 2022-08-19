@@ -1,8 +1,14 @@
 # Table of Contents
 
-1. [Naming Resources] (#naming)
+1. [Naming Resources](#naming)
 
 2. [Main.tf](#main.tf)
+3. [output.tf](#output.tf)
+
+2. [provider.tf](#provider.tf)
+3. [variables.tf](#variables.tf)
+
+2. [versions.tf](#versions.tf)
 
 
 ## Naming and Setting Up a Resource in main.tf   <a name="naming"></a>
@@ -84,7 +90,7 @@ resource "aws_iam_access_key" "default" {
 
 
 
-## Output.tf
+## Output.tf <a name="output.tf"></a>
 
 
 Output values are similar to return values in programming languages 
@@ -200,7 +206,7 @@ output "instance_id" {
 
 
 
-## Provider.tf
+## Provider.tf <a name="provider.tf"></a>
 
 
 provider "aws" {
@@ -226,7 +232,7 @@ region = "us-east-1"
   
 
 
-## Variables.tf
+## Variables.tf <a name="variables.tf"></a>
 
 
 variable "give_me_a_name" {
@@ -355,7 +361,7 @@ default = "t3.micro"
 
   
   
-## Versions.tf
+## Versions.tf <a name="versions.tf"></a>
 
   
   terraform {
