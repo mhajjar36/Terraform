@@ -73,3 +73,10 @@ sensitive = true
 output "iam_policy" {
  value = aws_iam_user_policy.mikepolicy.policy
 }
+
+
+# getawstempcredentials
+# terraform init
+# terraform plan
+# terraform apply
+# terraform destroy
