@@ -15,7 +15,7 @@
 
 Syntax
 
-resource "provider_resource_type" "name" {
+resource "provider_resource_type" "give_me_any_name" {
 
   value = "anothervalue"
 
