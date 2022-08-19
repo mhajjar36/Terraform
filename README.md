@@ -10,9 +10,12 @@
 2. [versions.tf](#versions.tf)
 
 
+Main.tf is the only file you need, all other files are optional, you can put all the contents of provider.tf, variable.tf, version.tf, output.tf in just main.tf however it is good practice to seperate the files
+
+
 ## main.tf   <a name="main"></a>
 
-Main.tf is the only file you need, all other files are optional
+
 
 Syntax for creating a resource
 
