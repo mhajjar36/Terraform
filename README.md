@@ -96,7 +96,11 @@ resource "aws_iam_access_key" "default" {
 
 Output values are similar to return values in programming languages 
 
-What do we want to output to the command line?
+What do we want to output to the command line after we run terraform apply?
+
+The results will be displayed on your terminal after you run terraform apply
+
+.secret outputs will be shown in your terraform.tfstate file that shows up after terraform apply due to security reasons
 
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 
