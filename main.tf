@@ -42,6 +42,7 @@ resource "aws_iam_user_policy" "mikepolicy" {
   "Statement": [
     {
       "Action": [
+        # add permissions here
         "s3:DeleteObject",
         "s3:GetObject",
         "s3:PutObject",
