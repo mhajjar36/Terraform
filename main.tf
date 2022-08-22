@@ -48,8 +48,10 @@ resource "aws_iam_user_policy" "mikepolicy" {
         "s3:PutObject",
         "s3:GetBucketLocation"
       ],
-      "Effect": "Allow",
-      "Resource": "*"
+     "Effect": "Allow",
+      "Resource": [
+        "arn:aws:s3:::s3-topic-sbox/*",
+        "arn:aws:s3:::s3-topic-dev/*"
     }
   ]
 }
