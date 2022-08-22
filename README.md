@@ -12,6 +12,10 @@
 
 Main.tf is the only file you need, all other files are optional, you can put all the contents of provider.tf, variable.tf, version.tf, output.tf in just main.tf however it is good practice to seperate the files
 
+Terraform lets you define your infrastructure as code that calls out to the aws API
+
+(s3 bucket, ec2 instance, or domain name)
+
 
 ## main.tf   <a name="main"></a>
 
@@ -25,7 +29,7 @@ resource "provider_resource_type" "give_me_any_name" {
 
   value2 = provider_resource_type.name.attribute_reference                
   
-  ↑ ↑ ↑ output of another resource
+  ↑ ↑ ↑ output of another resource to define this resource
 
   value3 = 100215
 
