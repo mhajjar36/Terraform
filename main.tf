@@ -81,7 +81,7 @@ sensitive = true
 }
 
 output "iam_policy" {
- value = aws_iam_user_policy.mikepolicy.policy
+ value = aws_iam_user_policy.mike_policy.policy
 }
 
 
