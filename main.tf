@@ -32,28 +32,30 @@ resource "aws_iam_access_key" "mikeaccess" {
   user = aws_iam_user.miketest.name
 }
 
-resource "aws_iam_user_policy" "mikepolicy" {
-  name = "mikepolicy"
-  user = aws_iam_user.miketest.name
-
-  policy = <<EOF
+#user policy with permissions
+resource "aws_iam_user_policy" "mike_policy" {
+    name = "mike_policy_test"
+    user = aws_iam_user.miketest.name
+    
+    policy = <<EOF
 {
-  "Version": "2012-10-17",
-  "Statement": [
+    "Version": "2012-10-17",
+    "Statement": [
     {
-      "Action": [
-        # add permissions here
+    "Action": [
         "s3:DeleteObject",
         "s3:GetObject",
+        "s3:GetBucketLocation",
         "s3:PutObject",
-        "s3:GetBucketLocation"
-      ],
-     "Effect": "Allow",
-      "Resource": [
+        "s3:AbortMultipartUpload"
+    ],
+    "Effect": "Allow",
+    "Resource": [
         "arn:aws:s3:::s3-topic-sbox/*",
         "arn:aws:s3:::s3-topic-dev/*"
+    ]
     }
-  ]
+]
 }
 EOF
 }
