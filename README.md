@@ -111,6 +111,16 @@ scroll down to Attributes Reference, this is what you put at the end of your out
 <img width="674" alt="image" src="https://user-images.githubusercontent.com/107702633/185460531-01f28691-0785-4806-99a3-0e5685f6ca5f.png">
 
 
+Syntax
+
+output "give_any_name_here" {
+
+value = provider_resource_type.name.attributes_reference.   
+
+#provider_resource_type.name is gotten from a resource type defined in main.tf
+
+}
+
 in main.tf
 
 resource "aws_instance" "web" {
@@ -138,15 +148,7 @@ value = aws_instance.web.public_ip
 
 
 
-Syntax
 
-output "give_any_name_here" {
-
-value = provider_resource_type.name.attributes_reference.   
-
-#provider_resource_type.name is gotten from a resource type defined in main.tf
-
-}
 
 <img width="213" alt="image" src="https://user-images.githubusercontent.com/107702633/185457670-fa1f0e50-bca3-4d9c-9a3b-ad7b4855a553.png">
 
