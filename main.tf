@@ -1,22 +1,22 @@
 
 # main.tf
 # way to setup iam user is shwon here https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_user
-resource "aws_iam_user" "miketest" {
-  name = "miketest"
+resource "aws_iam_user" "testuser" {
+  name = "testuser"
 
   tags = {
-    tag-key = "miketest"
+    tag-key = "test-user-tag"
   }
 }
 
 resource "aws_iam_access_key" "mikeaccess" {
-  user = aws_iam_user.miketest.name
+  user = aws_iam_user.testuser.name
 }
 
 #user policy with permissions
 resource "aws_iam_user_policy" "mike_policy" {
     name = "mike_policy_test"
-    user = aws_iam_user.miketest.name
+    user = aws_iam_user.testuser.name
     
     policy = <<EOF
 {
