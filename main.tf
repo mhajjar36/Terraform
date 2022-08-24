@@ -9,13 +9,13 @@ resource "aws_iam_user" "testuser" {
   }
 }
 
-resource "aws_iam_access_key" "mikeaccess" {
+resource "aws_iam_access_key" "testuser_access" {
   user = aws_iam_user.testuser.name
 }
 
 #user policy with permissions
-resource "aws_iam_user_policy" "mike_policy" {
-    name = "mike_policy_test"
+resource "aws_iam_user_policy" "testuser_policy" {
+    name = "testuser_policy_test"
     user = aws_iam_user.testuser.name
     
     policy = <<EOF
