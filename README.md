@@ -9,6 +9,8 @@
 
 2. [versions.tf](#versions.tf)
 
+Create an IAM user and give it the following policies s3:DeleteObject, s3:PutObject s3:PutObject, s3:GetBucketLocation, storage of data in S3
+
 
 Main.tf is the only file you need, all other files are optional, you can put all the contents of provider.tf, variable.tf, version.tf, output.tf in just main.tf however it is good practice to seperate the files
 
